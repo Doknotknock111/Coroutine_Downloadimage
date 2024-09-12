@@ -4,9 +4,9 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitClient {
-    private const val BASE_URL = "https://dummy-url.com/" // The base URL is required by Retrofit
+    private const val BASE_URL = "https://dummy-url.com/" // dummy url
 
-    // Build the Retrofit object
+    
     private val retrofit: Retrofit = Retrofit.Builder()
         .baseUrl(BASE_URL)
         .addConverterFactory(GsonConverterFactory.create()) // Gson can be replaced based on need
